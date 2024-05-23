@@ -1,9 +1,9 @@
-import logoDark from "./images/kanvas-dark.png";
+import logoWhite from "./images/kanvas-white.png";
 import appIcon from "./images/app-icon.png";
 
 const assets = {
   images: {
-    logoDark,
+    logoWhite,
     appIcon,
   },
   colors: {
