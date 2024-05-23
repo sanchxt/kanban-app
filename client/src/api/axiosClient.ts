@@ -5,11 +5,11 @@ const baseUrl = "http://localhost:5000/api/v1/";
 const getToken = () => localStorage.getItem("token");
 
 const axiosClient = axios.create({
-  baseUrl,
+  baseURL: baseUrl,
   paramsSerializer: (params) => queryString.stringify({ params }),
 });
 
-axiosClient.interceptors.request.use(async (config) => {
+axiosClient.interceptors.request.use(async (config: any) => {
   return {
     ...config,
     headers: {
